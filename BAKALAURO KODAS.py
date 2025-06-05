@@ -101,7 +101,7 @@ from sklearn.ensemble import RandomForestRegressor, RandomForestClassifier
 
 # === REGRESSION ===
 # MLP modelis regresijai
-mlp_reg = MLPRegressor(hidden_layer_sizes=(10,10), max_iter=1000, random_state=42)
+mlp_reg = MLPRegressor(hidden_layer_sizes=(10,10), max_iter=100, random_state=42)
 # Modelio treniravimas naudojant mokymo duomenis
 mlp_reg.fit(X_train_scaled, y_train_reg)
 y_pred_mlp = mlp_reg.predict(X_test_scaled)
